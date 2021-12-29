@@ -11,11 +11,25 @@
   </head>
 
   <body>
-    <header class ="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "blog", "#", id: "logo" %>
-        <nav>
-          <ul class =
-    <%= yield %>
+      <ul class="nav navbar-nav navbar-left">
+      <li><%= link_to "Alan Canales",   '#' %></li>
+      </ul>  
+      <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "About",   '#' %></li>
+            <li><%= link_to "Blog", '#' %></li>
+            <li><%= link_to "Bookshelf", '#' %></li>
+            <li><%= link_to "People", '#' %></li>
+            <li><%= link_to "Work", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
