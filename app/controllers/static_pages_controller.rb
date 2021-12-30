@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def blog
+    @articles = Article.all
   end
 
   def bookshelf
