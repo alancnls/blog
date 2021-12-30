@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get '/people', to: 'static_pages#people'
   get '/work', to: 'static_pages#work'
   get '/blog/:id(.:format)', to: 'static_pages#show', as: 'article'
+  get '/new', to: 'static_pages#new'
+  get '/edit', to: 'static_pages#edit'
   root 'static_pages#home'
+  post '/new', to: 'static_pages#create'
 
 end
