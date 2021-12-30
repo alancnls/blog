@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/bookshelf', to: 'static_pages#bookshelf'
   get '/people', to: 'static_pages#people'
   get '/work', to: 'static_pages#work'
+  get "/blog/:id", to: "static_pages#show"
   root 'static_pages#home'
 end
