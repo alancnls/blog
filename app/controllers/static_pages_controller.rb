@@ -58,3 +58,4 @@ class StaticPagesController < ApplicationController
   def work
   end
 end
+
