@@ -14,7 +14,9 @@ body {
   }
   
   .center {
-    text-align: center;
+    width: 500px;
+    text-align: left;
+    line-height: 25px;
   }
   
   .center h1 {
@@ -23,4 +25,8 @@ body {
 
   p {
       font-size: large;
+  }
+
+  ul {
+    font-size: medium;
   }
