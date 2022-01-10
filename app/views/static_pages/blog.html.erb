@@ -1,9 +1,11 @@
 <%provide(:title, "Blog") %>
-<h1 class="text-center">Blog</h1>
-<div class="text-center">
+<div id="content">
+<h1>Blog</h1>
+<div id="post">
 <% @articles.each do |article| %>
     <h2>
     <%= link_to article.title, article %>
     </h2>
 <% end %>
+</div>
 </div>
